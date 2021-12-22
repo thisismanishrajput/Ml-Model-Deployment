@@ -10,7 +10,7 @@ def hello():
     return render_template("index.html")
 
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     if request.method == "POST":
         age = request.form['age']
